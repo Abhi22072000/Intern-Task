@@ -1,0 +1,31 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body
+{
+    line-height: 1.5;
+    font-size: 16px;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    max-width: 1000px;
+    margin:0 auto;
+    padding: 0 30px;
+    background-image: url('images/Path\ 1361.png');
+}
+.navbar .container{
+    display:flex;
+    justify-content: space-between;
+}
+.navbar .container ul{
+    display:flex;
+    justify-content: space-between;
+}
+.nav{
+    margin-left: 20px;
+}

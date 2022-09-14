@@ -14,9 +14,8 @@ ul{
 }
 .container{
     max-width: 1000px;
-    margin:auto;
+    margin:0px 0px 0px 200px;
     padding: 30px;
-    /*background-image: url('images/Path\ 1361.png');*/
 }
 .navbar .container{
     display:flex;
@@ -25,7 +24,25 @@ ul{
 .navbar .container ul{
     display:flex;
     justify-content: space-between;
+    background-image: url('images/Path\ 1361.png');
 }
 .nav{
     margin-left: 20px;
+}
+h1{
+    font-weight: bold;
+    font-size:xx-large;
+}
+/*.button{
+    border: 2px solid blue;
+    width: 100px;
+    text-align: center;
+    border-radius: 20%;
+    background-color: blue;
+    border-left-style:initial ;
+    border-right-style:inherit ;
+}*/
+.container .section{
+    display:flex; 
+    justify-content: space-between;
 }

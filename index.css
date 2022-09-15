@@ -1,7 +1,7 @@
 *
 {
     box-sizing: border-box;
-    margin-left:0;
+    margin:0;
     padding:0;
 }
 body
@@ -26,9 +26,19 @@ ul{
     display:flex;
     justify-content: space-between;
     flex-direction: row;
-    align-content: flex-end;
-    z-index: 5;
-   
+    color: whitesmoke;
+    font-family: sans-serif;
+    margin-left: 370px;
+    margin-top:1px;
+}
+.container .navbar .nav button{
+    background-color:orange;
+    border: 2px solid orange;
+    color:white;
+    width: 100px;
+    height:30px;
+    border-radius: 20px;
+
 }
 .nav{
     margin-left: 20px;
@@ -61,6 +71,7 @@ h1{
 .container .section .main p button{
     width: 100px;
     height:50px;
+    border: 2px solid blue;
     background-color: blue;
     color: white;
     border-radius: 50px;
@@ -72,8 +83,11 @@ h1{
     width: 100px;
     height:25px;
     border-radius: 50px;
-
 }   
+.container .cent .boxes{
+    display:flex;
+    justify-content: space-evenly;
+}
 .container .section img{
     display: flex;
     align-items: flex-start;
@@ -99,69 +113,87 @@ h1{
     justify-content: center;
     flex-direction: column;
     width:250px;
+    color: whitesmoke;
     text-align: center;
     margin: 50px 0 ;
-    border:2px solid orange;
-    background-color: orange;
+    background-color: rgb(237, 182, 79);
     align-items: center;
     border-radius: 2px;
+}
+.container .cent .boxes .box1 p button{
+    border: 2px solid rgb(237, 182, 79);
 }
 .container .boxes .box2{
     display: flex;
     justify-content: center;
     flex-direction: column;
     width:250px;
+    color: whitesmoke;
     text-align: center;
     margin:50px 0;
-    border:2px solid aqua;
-    background-color: aqua;
+    background-color: rgb(53, 173, 173);
     align-items: center;
     border-radius: 2px;
+}
+.container .cent .boxes .box2 p button{
+    border: 2px solid rgb(53, 173, 173);
 }
 .container .boxes .box3{
     display: flex;
     justify-content: center;
     flex-direction: column;
     width:250px;
+    color: whitesmoke;
     text-align: center;
     margin: 50px 0 50px 0;
-    border:2px solid blueviolet;
-    background-color: blueviolet;
+    background-color: rgb(144, 5, 144);
     align-items: center;
     border-radius: 2px;
+}
+.container .cent .boxes .box3 p button{
+    border: 2px solid rgb(144, 5, 144);
 }
 .container .boxes .box4{
     display: flex;
     justify-content: center;
     flex-direction: column;
     width:250px;
+    color: whitesmoke;
     text-align: center;
-    border:2px solid blue;
-    background-color:blue;
+    background-color:rgb(70, 70, 178);
     align-items: center;
     border-radius: 2px;
+}
+.container .cent .boxes .box4 p button{
+    border: 2px solid rgb(70, 70, 178);
 }
 .container .boxes .box5{
     display: flex;
     justify-content: center;
     flex-direction: column;
     width:250px;
+    color: whitesmoke;
     text-align: center;
-    border:2px solid violet;
-    background-color: violet;
+    background-color: rgb(132, 132, 224);
     align-items: center;
     border-radius: 2px;
+}
+.container .cent .boxes .box5 p button{
+    border: 2px solid rgb(132, 132, 224);
 }
 .container .boxes .box6{
     display: flex;
     justify-content: center;
     flex-direction: column;
     width:250px;
+    color: whitesmoke;
     text-align: center;
-    border:2px solid red;
-    background-color: red;
+    background-color: rgb(210, 7, 7);
     align-items: center;
     border-radius: 2px;
+}
+.container .cent .boxes .box6 p button{
+    border: 2px solid rgb(210, 7, 7);
 }
 .container .service .boxes{
     background-color: gainsboro;
@@ -170,91 +202,169 @@ h1{
     display:flex;
     justify-content: space-around;
 }
-.container .workflow .dis{display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-width: 400px;
-}
-.container .workflow .dis .con{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items:center;
-}
 
-.container .workflow .dis .con .num1{
-    border:2px solid blue; 
-    border-radius:50%; 
-    text-align: center;
-    background-color:blue;
-    color:white;
+.container .naimg{
+    position:absolute;
+    right: 70px;
+    top:25px;
+    z-index: -1;
 }
-.container .workflow .dis .con .num2{
-    border:2px solid green; 
-    border-radius:50%; 
-    text-align: center;
-    background-color:green;
-    color:white;
+.container .workflow .flow .num{
+    display:flex;
+    flex-direction: column;
+    padding-top: 40px;
+    opacity:0.6;
 }
-.container .workflow .dis .con .num3{
-    border:2px solid orange; 
-    border-radius:50%; 
-    text-align: center;
-    background-color:orange;
-    color:white;
+.container .workflow .flow .num p{
+
 }
-.container .workflow .dis .con .num4{
-    border:2px solid red; 
-    border-radius:50%; 
-    text-align: center;
-    background-color:red;
-    color:white;
+.container .workflow .flow .num .num1{
+   display: flex;
+   margin-top: 20px;
 }
-.container .workflow .dis .con .num5{
-    border:2px solid yellow; 
-    border-radius:50%; 
-    text-align: center;
-    background-color:yellow;
-    color:white;
+.container .workflow .flow .num .num2{
+    display: flex;
+    align-self: flex-end;
+    margin-top: -70px;
 }
-.container .workflow .dis .con .num6{
-    border:2px solid yellowgreen; 
-    border-radius:50%; 
-    text-align: center;
-    background-color:yellowgreen;
-    color:white;
+.container .workflow .flow .num .num3{
+   display:flex;
+   margin-top: 20px;
 }
-.container .workflow .dis .con .num7{
-    border:2px solid aqua; 
-    border-radius:50%;
-    text-align: center;
-    background-color:aqua;
-    color:white;
+.container .workflow .flow .num .num4{
+   display: flex;
+   align-self: flex-end;
+   margin-top: -70px;
 }
-.container .workflow .dis .con .num8{
-    border:2px solid brown; 
-    border-radius:50%; 
+.container .workflow .flow .num .num5{
+   display: flex;
+   margin-top: 20px;
+}
+.container .workflow .flow .num .num6{
+    display: flex;
+    align-self: flex-end;
+    margin-top: -70px;
+}
+.container .workflow .flow .num .num7{
+    display: flex;
+    margin-top:20px;
+
+}
+.container .workflow .flow .num  .num8{
+   display: flex;
+   align-self: flex-end;
+   margin-top: -70px;
+    
+}
+.container .workflow .flow .num .num9{
+    display:flex;
+    margin-top: 20px;
+}
+.container .workflow .flow .num .num1 .circle1{
+    border: 2px solid blue;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    padding:5px;
     text-align: center;
-    background-color:brown;
-    color:white;
-}.container .workflow .dis .con .num9{
-    border:2px solid burlywood; 
-    border-radius:50%; 
+    color: white;
+    background-color: blue;
+}
+.container .workflow .flow .num .num2 .circle2{
+    border: 2px solid violet;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    padding:5px;
     text-align: center;
-    background-color:burlywood;
-    color:white;
+    color: white;
+    background-color: violet;
+}
+.container .workflow .flow .num .num3 .circle3{
+    border: 2px solid greenyellow;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    padding:5px;
+    text-align: center;
+    color: white;
+    background-color: greenyellow;
+}
+.container .workflow .flow .num .num4 .circle4{
+    border: 2px solid magenta;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    padding:5px;
+    text-align: center;
+    color: white;
+    background-color: magenta;
+}
+.container .workflow .flow .num .num5 .circle5{
+    border: 2px solid aqua;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    padding:5px;
+    text-align: center;
+    color: white;
+    background-color: aqua;
+}
+.container .workflow .flow .num .num6 .circle6{
+    border: 2px solid lightcoral;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    padding:5px;
+    text-align: center;
+    color: white;
+    background-color: lightcoral;
+}
+.container .workflow .flow .num .num7 .circle7{
+    border: 2px solid lightpink;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    padding:5px;
+    text-align: center;
+    color: white;
+    background-color: lightpink;
+}
+.container .workflow .flow .num .num8 .circle8{
+    border: 2px solid lightgreen;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    padding:5px;
+    text-align: center;
+    color: white;
+    background-color:lightgreen;
+}
+.container .workflow .flow .num .num9 .circle9{
+    border: 2px solid yellowgreen;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    padding:5px;
+    text-align: center;
+    color: white;
+    background-color: yellowgreen;
 }
 .blog{
     text-align: center;
 }
-.blog .cut{
+.container .blog .cut{
     display: flex;
     justify-content:space-between ;
     margin:10px 0px 0px 0px;
 }
+.container .blog .cut p,strong{
+    text-align:center;
+    margin-left: 2px;
+}
 .blog .cut .arrow{
-    margin: 10px 250px 0 0;
     width: 20px;
+    margin-left:-250px;
 }
 .container .last img{
     width:150px;
@@ -275,4 +385,12 @@ width: 400px;
 .container .final img{
     width:100px;
     height:50px;
+}
+.container .final .hed{
+    font-size: larger;
+    opacity:0.5;
+}
+.container .final .ted{
+    font-size: 10px;
+    margin-top: 5px;
 }
